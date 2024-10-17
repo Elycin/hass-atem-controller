@@ -20,7 +20,6 @@ class ATEMConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
         if user_input is not None:
             host = user_input["host"]
             try:
-                # Optionally validate the host (e.g., with regex or by trying to connect)
                 return self.async_create_entry(title="ATEM Controller", data=user_input)
             except Exception:
                 errors["base"] = "connection_failed"

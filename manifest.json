@@ -1,0 +1,10 @@
+{
+    "domain": "atem_controller",
+    "name": "ATEM Controller",
+    "version": "0.0.1",
+    "config_flow": true,
+    "requirements": ["pyatemmax==1.3.4"],
+    "codeowners": ["@elycin"],
+    "dependencies": []
+  }
+  
